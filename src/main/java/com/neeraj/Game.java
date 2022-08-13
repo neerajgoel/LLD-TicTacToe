@@ -42,6 +42,12 @@ public class Game {
             this.game.player2 = player; return this;
         }
         public Game build(){
+            if ( game.player1 == null){
+                throw new Error("You need to add Player 1 before build.");
+            }
+            if ( game.player2 == null){
+                throw new Error("You need to add Player 2 before build.");
+            }
             return game;
         }
     }

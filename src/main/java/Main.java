@@ -14,10 +14,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         // create player 1
-        System.out.println("Enter com.neeraj.Player 1 Name:");
+        System.out.println("Enter Player 1 Name:");
         String name = scanner.nextLine();
         name = name.isEmpty() ? player1Name : name;
-        System.out.println("Enter com.neeraj.Player 1 Character (X):");
+        System.out.println("Enter Player 1 Character (X):");
         String chStr = scanner.nextLine();
         char ch = chStr.isEmpty() ? player1Ch : chStr.charAt(0);
 
@@ -27,16 +27,16 @@ public class Main {
                 .build();
 
         // create player 2
-        System.out.println("Enter com.neeraj.Player 2 Name:");
+        System.out.println("Enter Player 2 Name:");
         name = scanner.nextLine();
         name = name.isEmpty() ? player2Name : name;
         if( name.contentEquals(player1.getName()) )
-            throw new Error("com.neeraj.Player must have different name!!");
-        System.out.println("Enter com.neeraj.Player 2 Character (0):");
+            throw new Error("Player must have different name!!");
+        System.out.println("Enter Player 2 Character (0):");
         chStr = scanner.nextLine();
         ch = chStr.isEmpty() ? player2Ch : chStr.charAt(0);
         if( ch == player1.getCh() )
-            throw new Error("com.neeraj.Player must have different character!!");
+            throw new Error("Player must have different character!!");
         Player player2 = new Player.PlayerBuilder()
                 .setName(name)
                 .setCh(ch)

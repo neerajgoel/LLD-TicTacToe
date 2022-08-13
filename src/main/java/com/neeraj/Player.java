@@ -46,6 +46,9 @@ public class Player {
         }
 
         public Player build(){
+            if( player.getName() == null || player.getName().isEmpty() ){
+                throw new Error("Player name must be set first!!!");
+            }
             return player;
         }
     }

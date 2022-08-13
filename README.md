@@ -21,16 +21,16 @@ com.neeraj.Game has 2 players. Every player has a name and a character. The char
 
 ### com.neeraj.Game
 
-- com.neeraj.Game starts with com.neeraj.Player 1 inserting their character on one of the boxes
+- com.neeraj.Game starts with Player 1 inserting their character on one of the boxes
 - Players get alternative turns, and insert their characters on boxes
 - On every turn, take command line input of which box to place character
 - After every turn show state of game
 - After every turn, one of 4 conditions can happen
-    - com.neeraj.Player specifies wrong box (already has been used);  
+    - Player specifies wrong box (already has been used);  
       In this case, same player will try again
     - Placing the character results in game winning condition (specified below);  
       in this case end the game and declare winner
-    - com.neeraj.Player specifies correct box, but doesn’t win game;  
+    - Player specifies correct box, but doesn’t win game;  
       Give turn to other player and continue game
     - com.neeraj.Board is full (this was last entry), and no winner;  
       Declare game draw and end game
@@ -45,19 +45,19 @@ com.neeraj.Game has 2 players. Every player has a name and a character. The char
 ### Initialise com.neeraj.Game & Players
 
 ```
-Enter com.neeraj.Player 1 Name: 
+Enter Player 1 Name: 
 > Aman 
-Enter com.neeraj.Player 1 Character (X):
+Enter Player 1 Character (X):
 > ❎
-Enter com.neeraj.Player 2 Name:
+Enter Player 2 Name:
 > Rahul 
-Enter com.neeraj.Player 2 Character (O):
+Enter Player 2 Character (O):
 > 🛑
 ``` 
 
 > Note: If player doesn’t enter details, default to following values
-> com.neeraj.Player 1 - abc, X
-> com.neeraj.Player 2 - qwe, 0
+> Player 1 - abc, X
+> Player 2 - qwe, 0
 
 
 ### Gameplay
@@ -68,7 +68,7 @@ _  _  _
 _  _  _
 _  _  _
 
-com.neeraj.Player 1: Enter box: 
+Player 1: Enter box: 
 > A1 
 
 
@@ -77,7 +77,7 @@ com.neeraj.Board:
 _  _  _
 _  _  _
 
-com.neeraj.Player 2: Enter box: 
+Player 2: Enter box: 
 > A2 
 
 com.neeraj.Board: 
@@ -85,7 +85,7 @@ com.neeraj.Board:
 _  _  _
 _  _  _
 
-com.neeraj.Player 2: Enter box: 
+Player 2: Enter box: 
 > 
 ```
 
